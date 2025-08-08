@@ -19,11 +19,4 @@ public class TasksFrontendApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(TasksFrontendApplication.class, args);
     }
-    // APAGUE ESTE MÉTODO INTEIRO
-    @Bean
-    public FilterRegistrationBean<ErrorPageFilter> errorPageFilterRegistration() {
-        FilterRegistrationBean<ErrorPageFilter> registration = new FilterRegistrationBean<>(new ErrorPageFilter());
-        registration.setEnabled(false);
-        return registration;
-    }
 }
